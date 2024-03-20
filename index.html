@@ -27,11 +27,7 @@
         pesan = pesan + '<br/>';
         pesan =
           pesan +
-          '<img src="https://maps.googleapis.com/maps/api/staticmap?size=400×400&amp;zoom=13&amp;markers=color:red%7Clabel:C%7C' +
-          latitude +
-          ',' +
-          longitude +
-          '"/>';
+          '<img src="https://maps.googleapis.com/maps/api/staticmap?size=400×400&amp;zoom=13&amp;markers=color:red%7Clabel:C%7C' +latitude +',' +longitude +'"/>';
         div_isi = document.getElementById('div_isi');
         //alert(pesan);
         div_isi.innerHTML = pesan;
@@ -42,8 +38,6 @@
         div_isi.innerHTML = 'error=' + p.message;
       }
     </script>
-    <div>
-      <input id="div_isi" type="text">
-    </div>
+    <div id="div_isi"></div>
   </body>
 </html>
