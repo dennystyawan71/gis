@@ -32,7 +32,7 @@
         pesan = pesan + '<br/>';
         pesan =
           pesan +
-          '<input type="text" value="' +latitude +',' +longitude +'" "/>';
+          'https://www.google.com/maps?q=' +latitude + ',' +longitude;
         div_isi = document.getElementById('div_isi');
         //alert(pesan);
         div_isi.innerHTML = pesan;
