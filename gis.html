@@ -9,7 +9,7 @@
       src="geo-location/js/geo-min.js"
       type="text/javascript"
       charset="utf-8"
-    ></script> 
+    ></script>
     <script>
       if (geo_position_js.init()) {
         geo_position_js.getCurrentPosition(success_callback, error_callback, {
@@ -32,7 +32,11 @@
         pesan = pesan + '<br/>';
         pesan =
           pesan +
-          'https://www.google.com/maps?q=' +latitude + ',' +longitude;
+          '<input type="text" value="' +
+          latitude +
+          ',' +
+          longitude +
+          '" "/>';
         div_isi = document.getElementById('div_isi');
         //alert(pesan);
         div_isi.innerHTML = pesan;
@@ -43,8 +47,6 @@
         div_isi.innerHTML = 'error=' + p.message;
       }
     </script>
-    <form>
-      <input id ="div_isi"/>
-    </form>
+    <div id="div_isi"></div>
   </body>
 </html>
